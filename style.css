@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.main_card {
+    background-color: hsl(0, 0%, 100%);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.main_card__image img{
+    width: 300px;
+    height: 450px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: inline;
+    margin-top: 4px;
+}
+.card_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
+.main_card__info {
+    width: 225px;
+    justify-content: center;
+}
+.main_card__info__brand {
+    font-size: 14px;
+    font-family: Montserrat;
+    color: hsl(228, 12%, 48%);
+}
+.main_card__info__header {
+    font-family: Fraunces;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.main_card__info__info {
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 20px;
+}
+.main_card__info__prices {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.main_card__info__prices .main_card__info__prices__nowprice {
+    color: hsl(158, 36%, 37%);
+    font-family: Fraunces;
+}
+.main_card__info__prices .main_card__info__prices__earlyprice {
+    color: hsl(228, 12%, 48%);
+    font-family: Montserrat;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: line-through;
+    margin-right: 30px;
+}
+.main_card__info__button button{
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    padding: 10px 60px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+.main_card__info__addtocart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main_card__button__cart {
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+.main_card__button_text {
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+.main_card__info__button button:hover{
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+    color: white;
+}
+@media only screen and (max-width: 375px) {
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin-top: 50%;
+        margin-bottom: 50%;
+    }
+    .main_card {
+        background-color: hsl(0, 0%, 100%);
+        height: 880px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .main_card__info__brand {
+        margin-top: 20px;
+    }
+    .main_card__image img{
+        width: 300px;
+        height: 450px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+        display: inline;
+        margin-top: -47px;
+    }
+}
